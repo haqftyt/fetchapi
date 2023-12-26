@@ -11,7 +11,7 @@ function allEmployees(){
         console.log(val[0].author);
         let storedata='';
         val.map((values)=>{
-            storedata += ` <div class="col-md-4 py-3">
+            storedata += ` <div class="col-md-4 col-12 py-3">
             <div class="card bg-primary">
                 <div class="card-body">
                     <p><strong>Text: </strong>${values.text}</p>
