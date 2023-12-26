@@ -1,18 +1,25 @@
-showAll.addEventListener('click',function(){
-   // alert();
+let show=document.getElementById("showAll");
+show.addEventListener('click',function(){
+  // alert()
    allEmployees()
 })
 
 function allEmployees(){
-    var allshow='';
-    var xmlhttp= new XMLHttpRequest();
-    var url="https://dummy.restapiexample.com/api/v1/employees";
-    xmlhttp.open('GET',url,true);
-    xmlhttp.onload = function(){
-        if(this.readyState == 4 && this.status == 200){
-            allshow=JSON.parse(this.responseText);
-        }
-        console.log(allshow);
-    }
-    xmlhttp.send();
+    fetch("https://type.fit/api/quotes").then(data=>{
+        return data.json();
+    }).then(val=>{
+        console.log(val[0].author);
+        let storedata='';
+        val.map((values)=>{
+            storedata += ` <div class="col-4 py-3">
+            <div class="card bg-primary">
+                <div class="card-body">
+                    <p><strong>Text: </strong>${values.text}</p>
+                    <p><strong>Author: </strong>${values.author}</p>
+                </div>
+            </div>
+         </div>`
+        });
+        document.getElementById('allList').innerHTML=storedata;
+    })
 }
