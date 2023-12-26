@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+.container{
+    background-image: linear-gradient(rgba(0,0,50,0.6), rgba(0,0,50,0.6)),url(/fetchapi/img/travel.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.box{
+    border-radius: 10px;
+    width:300px;
+    height:400px;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 2px 2px 2px black;
+}
+.box h3{
+   margin:25px 0;
+   text-align: center;
+   font-weight:bold;
+   text-shadow: 5px 3px 1px rgb(231, 220, 220);
+   position:relative;
+}
+.box h3::after{
+    content:'';
+    position:absolute;
+    width:65px;
+    height:4px;
+    left:37%;
+    top:48px;
+    background-color: blue;
+    box-shadow: 2px 2px 2px black;
+}
+.input-field{
+    background-color: rgb(222, 218, 218);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:250px;
+    margin:20px 23px;
+    padding:5px 0;
+    border-radius: 5px;
+}
+.input-field i{
+    font-size: 22px;
+}
+.input-field input{
+    background-color: transparent;
+    border:none;
+    outline:none;
+}
+.input-team{
+    width:250px;
+    padding-top:5px;
+}
+.check-field{
+    width:250px;
+    margin-left:27px;
+}
+.btn-field{
+    text-align: center;
+}
