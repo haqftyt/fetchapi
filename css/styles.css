@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     height:100vh;
+    position: relative;
 }
 .box{
     border-radius: 10px;
@@ -61,4 +62,44 @@
 }
 .btn-field{
     text-align: center;
+}
+.popbox{
+    width:400px;
+    height:200px;
+    background-color: blue;
+    box-shadow: 5px 3px 2px black;
+    color:#fff;
+    position: absolute;
+    top:30%;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    visibility: hidden;
+    transform: scale(0.1);
+}
+.open{
+    visibility: visible;
+    transform: scale(1);
+}
+.popbox h4{
+    text-align: center;
+    margin:20px 0;
+}
+.popbox i{
+    font-size:50px;
+    margin:15px 180px;
+    color:yellow;
+}
+.popbox .btn{
+    margin:0 155px;
+    background-color: red;
+    width:20%;
+}
+.popbox #wrong{
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:20px;
+    margin:0;
+    color:#fff;
+    text-align: right;
 }
