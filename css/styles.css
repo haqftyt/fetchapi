@@ -2,7 +2,8 @@
 .container{
     background-image: linear-gradient(rgba(0,0,50,0.6), rgba(0,0,50,0.6)),url(/fetchapi/img/travel.jpg);
     background-repeat:no-repeat;
-    background-size:100%;
+    background-size: 100%;
+    background-position: center;
     display:flex;
     justify-content: center;
     align-items: center;
